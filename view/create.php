@@ -7,7 +7,7 @@
         <br />
         <input type="password" name="passwd" placeholder="password">
         <br />
-        <button type="submit" value="OK">Créer</button>
+        <input type="submit" name="submit" value="Crée">
     </form>
 </body>
 </html>

@@ -7,7 +7,7 @@
         <br />
         <input type="password" name="passwd" placeholder="password">
         <br />
-        <button type="submit" value="OK">login</button>
+        <button type="submit" name="submit" value="OK">login</button>
    </form> 
    <br />
    <a href="create.php">create account</a>
