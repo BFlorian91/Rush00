@@ -6,12 +6,11 @@
         $user['login'] = $_POST['login'];
         $user['passwd'] = hash('Whirlpool', $_POST['passwd']);
 
-        if (!file_exists('../private')) {
+        if (!file_exists('../private')) 
             mkdir('../private', 0755);
-        }
-        if (!file_exists('../private/passwd')) {
+        if (!file_exists('../private/passwd'))
             file_put_contents('../private/passwd', null);
-        }
+
         $accounts= unserialize(file_get_contents('../private/passwd'));
         if ($accounts) 
         {
