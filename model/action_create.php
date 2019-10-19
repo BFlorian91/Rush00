@@ -22,7 +22,6 @@
         }
         if ($exist) 
         {
-            //header('Location: /view/create.php/');
             echo "Nom d'utilisateur indisponible";
             exit;
         }
