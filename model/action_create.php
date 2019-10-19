@@ -19,7 +19,7 @@
                 if ($val['login'] == $user['login']) 
                     $exist = true;
         }
-        if ($exist) 
+        if ($exist || $_POST['login'] === "unsubscribe") 
         {
             echo "Nom d'utilisateur indisponible";
             exit;
