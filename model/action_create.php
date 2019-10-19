@@ -32,8 +32,5 @@
         }
     } 
     else
-    {
-        echo "";
-       // header("Location: /view/create.php");
-    } 
+        header("Location: /view/create.php");
         
