@@ -7,7 +7,10 @@
         {
             foreach ($accounts as $key => $val) 
                 if ($val['login'] == $login && $val['passwd'] == hash("whirlpool", $passwd))
-                    return true;
+                {
+                    if ($val['ban'] === 0)
+                        return true;
+                }
             return false;
         }
         return false;

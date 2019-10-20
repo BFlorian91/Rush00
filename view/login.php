@@ -10,7 +10,6 @@
             </form> 
             <div class="button_container" >
                 <a class="button_in_form" href="create.php">create account</a>
-                <a class="button_in_form" href="modif.php">edit account</a>
             </div>
         </div>
     </div>

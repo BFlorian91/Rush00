@@ -20,5 +20,5 @@
     else 
     {
         $_SESSION["loggued_on_user"] = "";
-        echo "ERROR" . PHP_EOL;
+        header("location: ../index.php");
     }

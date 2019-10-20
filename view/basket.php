@@ -33,16 +33,18 @@
                 <?php foreach ($basket as $key => $value) {?>
                 <tr>
                     <td><?php echo $basket[$key]['ref'];?></td>
-                    <td><?php echo $basket[$key]['price'];?></td>
+                    <td><?php echo $basket[$key]['price'];?>$</td>
                     <td><?php echo $basket[$key]['stock'];?></td>
                     <td>
                         <form action="../model/action_basket.php" method="POST">
                             <input type="hidden" name="ref" value="<?php echo $basket[$key]['ref'];?>">
-                            <input type="submit" name="submit" value="+">
-                            <?php if ($basket[$key]['stock'] >= 2) {?>
-                            <input type="submit" name="submit" value="-">
-                            <?php }?>
-                            <input type="submit" name="submit" value="delete">
+                            <div class="container">
+                                <input type="submit" name="submit" value="+">
+                                <?php if ($basket[$key]['stock'] >= 2) {?>
+                                <input type="submit" name="submit" value="-">
+                                <?php }?>
+                                <input type="submit" name="submit" value="delete">
+                            </div>
                         </form>
                     </td>
                 </tr>
@@ -51,12 +53,18 @@
         </table>
     </div>
     <div>
-        Total : <?php echo get_total()?>
-        <form action="../model/action_basket.php" method="POST">
-             <input type="submit" name="submit" value="purchase">
-             <input type="submit" name="submit" value="empty">
-        </form>
+        <div class="container">
+            <p id=total>Total: <?php echo get_total()?>$</p>
+        </div>
+        <div class="button_center">
+            <form action="../model/action_basket.php" method="POST">
+                 <input type="submit" name="submit" value="purchase">
+                 <input type="submit" name="submit" value="empty">
+            </form>
+        </div>
     </div>
-    <?php } else {echo "Votre panier est vide\n";} ?>
+    <div class="container">
+        <?php } else { ?><p class="total">Votre panier est vide<?php } ?></p>
+    </div>
     </body>
 </html>
