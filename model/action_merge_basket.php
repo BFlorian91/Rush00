@@ -12,17 +12,15 @@
 		if ($basket)
 		{
 			foreach ($basket as $key => $value)
-				add_item($value['ref'], $value['stock']);
+				add_item($value['ref'], $value['stock'], $value['price']);
 		}
 		if (file_exists("../private/unsuscribe"))
 			unlink("../private/unsuscribe");
+		header("location: ../index.php");
 	}
 
 	if ($_POST['submit'] === "OUI")
-	{
 		merge_basket();
-		header("location: ../index.php");
-	}
 	if ($_POST['submit'] === "NON")
 	{
 		empty_basket(0);

@@ -12,12 +12,12 @@
 
 	if ($_POST['submit'] === "add to card")
 	{
-		add_item($_POST['ref'], 1);
+		add_item($_POST['ref'], 1, -1);
 		header("location: ../index.php");
 	}
 	else if ($_POST['submit'] === "+")
 	{
-		add_item($_POST['ref'], 1);
+		add_item($_POST['ref'], 1, -1);
 		header("location: ../view/basket.php");
 	}
 	else if ($_POST['submit'] === "-")

@@ -1,4 +1,7 @@
 <?php
+    session_start();
+    if ($_SESSION['loggued_on_user'] !== "admin")
+        header("Location: ../view/access_denied.php");
     require_once 'menu.php';
 ?>
 <div class="container">

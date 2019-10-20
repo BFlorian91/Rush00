@@ -7,6 +7,6 @@
         <link rel="stylesheet" href="../lib/menu.css">
         <link rel="stylesheet" href="../lib/admin_pannel.css">
         <link rel="stylesheet" href="../lib/forms.css">
-        <title>Black Market</title>
+        <title>AchetesUnEtudiant.com</title>
     </head>
 <body>

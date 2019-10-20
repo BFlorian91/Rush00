@@ -16,9 +16,10 @@
 		return (0);
 	}
 
-	function add_item($ref, $quantite)
+	function add_item($ref, $quantite, $price)
 	{
-		$price = substract_stock($ref, get_products($ref), 1);
+		if ($price == -1)
+			$price = substract_stock($ref, get_products($ref), 1);
 		$basket = get_basket();
 		if ($price == -1)
 		{

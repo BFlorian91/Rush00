@@ -3,7 +3,7 @@
     require_once 'head.php';
 ?>
     <header>
-        <h1>Black Market</h1>
+        <h1>AchetesUnEtudiant.com</h1>
         <nav>
             <ul class="nav">
                 <li>

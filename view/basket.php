@@ -55,7 +55,7 @@
     </div>
     <div>
         <div class="container">
-            <p id=total>Total: <?php echo get_total()?>$</p>
+            <p class="total">Total: <?php echo get_total()?>$</p>
         </div>
         <div class="button_center">
             <form action="../model/action_basket.php" method="POST">
