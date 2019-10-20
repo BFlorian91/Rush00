@@ -8,7 +8,6 @@
     else if (file_exists("../private/unsuscribe"))
         $basket = unserialize(file_get_contents("../private/unsuscribe"));
     require_once 'menu.php';
-    var_dump($basket);
 ?>
 
 <html>
@@ -17,7 +16,7 @@
         <title>Basket</title>
         <link rel="stylesheet" type="text/css" href="../lib/style.css">
     </head>
-    <body >
+    <body>
     <header>
         <h1>Panier</h1>
     </header>
@@ -45,7 +44,7 @@
                             <?php }?>
                             <input type="submit" name="submit" value="delete">
                         </form>
-                    </td>>
+                    </td>
                 </tr>
                 <?php }?>
             </tbody>

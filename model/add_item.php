@@ -1,13 +1,14 @@
 <?php
-	include 'basket_utils.php';
 
-	function is_already_in_basket($ref, $basket)
+	include_once 'basket_utils.php';
+
+	function is_already_in_basket($ref, $basket, $quantite)
 	{
 		foreach ($basket as $key => $value) 
 		{	
 			if ($value['ref'] == $ref)
 			{
-				$basket[$key]['stock'] += 1;
+				$basket[$key]['stock'] += $quantite;
 				fill_basket($basket);
 				return (1);
 			}
@@ -15,7 +16,7 @@
 		return (0);
 	}
 
-	function add_item($ref)
+	function add_item($ref, $quantite)
 	{
 		$price = substract_stock($ref, get_products($ref), 1);
 		$basket = get_basket();
@@ -26,10 +27,10 @@
 		}
 		if ($basket)
 		{
-			if (is_already_in_basket($ref, $basket))
+			if (is_already_in_basket($ref, $basket, $quantite))
 				return ;
 		}
-		$basket[] = array('ref' => $_POST['ref'], 'price' => $price, 'stock' => 1);
+		$basket[] = array('ref' => $ref, 'price' => $price, 'stock' => $quantite);
 		fill_basket($basket);
 	}
 ?>

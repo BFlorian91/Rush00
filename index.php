@@ -2,7 +2,6 @@
     session_start();
     require_once 'view/head.php';
     $products = unserialize(file_get_contents("./private/products.csv"));
-    var_dump($products);
 ?>
 <body>
     <?php require_once 'view/menu.php'; 
