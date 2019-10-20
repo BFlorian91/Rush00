@@ -5,6 +5,7 @@
         
         $user['login'] = $_POST['login'];
         $user['passwd'] = hash('Whirlpool', $_POST['passwd']);
+        $user['ban'] = 0;
 
         if (!file_exists('../private')) 
             mkdir('../private', 0755);

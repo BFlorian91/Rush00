@@ -11,6 +11,10 @@ li {
     align-items: center;
 }
 
+.pannel {
+    max-width: 1000px;
+}
+
 .button_admin {
     display: flex;
     justify-content: space-around;

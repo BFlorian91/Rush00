@@ -3,7 +3,7 @@
 	{
 		mkdir('./private');
 		
-		$set_passwd[] = array('login' => "admin", 'passwd' => hash('whirlpool', "admin"));
+		$set_passwd[] = array('login' => "admin", 'passwd' => hash('whirlpool', "admin"), 'ban' => 0);
 		file_put_contents("./private/passwd", serialize($set_passwd));
 
 		$set_products[] = array('ref' => "Florian", 'category' => "Garçon", 'price' => 1, 'stock' => 7, 'img' => "flbeaumo");

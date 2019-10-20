@@ -1,6 +1,6 @@
 <?php 
     require_once 'menu.php';
-    require_once 'display_articles.php';
+    require_once '../model/display_articles.php';
 ?>
 <div class="container_pannel">
     <div class="display_articles">

@@ -1,14 +1,11 @@
 <?php 
-    require_once 'menu.php'
+    require_once 'menu.php';
+    require_once '../model/display_members.php';
 ?>
-    <form action="/model/action_remove_user.php" method="POST">
-        <label>Remove user:</label>
-        <input type="text" name="login" placeholder="Login">
-        <input type="submit" name="submit">
-    </form>
-    <form action="/model/action_bl_user.php" method="POST">
-        <label>Black list user:</label>
-        <input type="text" name="login" placeholder="Login">
-        <input type="submit" name="submit">
-    </form>
+<div class="container_pannel">
+    <div class="pannel">
+    <?php
+        display_members();
+    ?>
+</div>
 </body>
