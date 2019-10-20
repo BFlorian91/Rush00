@@ -1,4 +1,5 @@
 <?php
+	include 'basket_utils.php';
 	include 'add_item.php';
 	include 'substract_item.php';
 	include 'stock_manager.php';
@@ -11,12 +12,12 @@
 
 	if ($_POST['submit'] === "add to card")
 	{
-		add_item($_POST['ref']);
+		add_item($_POST['ref'], 1);
 		header("location: ../index.php");
 	}
 	else if ($_POST['submit'] === "+")
 	{
-		add_item($_POST['ref']);
+		add_item($_POST['ref'], 1);
 		header("location: ../view/basket.php");
 	}
 	else if ($_POST['submit'] === "-")
@@ -26,7 +27,7 @@
 	}
 	else if ($_POST['submit'] === "delete")
 	{
-		delete_item($_POST['ref']);
+		delete_item($_POST['ref'], 1);
 		header("location: ../view/basket.php");
 	}
 	else if ($_POST['submit'] === "purchase")
@@ -38,7 +39,7 @@
 	}
 	else if ($_POST['submit'] === "empty")
 	{
-		empty_basket($_POST['ref']);
+		empty_basket(1);
 		header("location: ../view/basket.php");
 	}
 ?>

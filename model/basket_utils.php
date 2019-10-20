@@ -39,4 +39,21 @@
 			if (file_exists("../private/unsuscribe"))
 				unlink("../private/unsuscribe");
 	}
+
+	function check_baskets()
+	{
+		session_start();
+		if ($_SESSION['loggued_on_user'] != NULL)
+		{
+			if (file_exists("../private/".$_SESSION['loggued_on_user']))
+				$session = unserialize(file_get_contents("../private/".$_SESSION['loggued_on_user']));
+		}
+		if (file_exists("../private/unsuscribe"))
+			$unsuscribe = unserialize(file_get_contents("../private/unsuscribe"));
+		if ($session != NULL && $unsuscribe != NULL)
+			return (1);
+		if ($unsuscribe != NULL)
+			return (2);
+		return (3);
+	}
 ?>
