@@ -15,6 +15,6 @@
     	<input type="hidden" name="ref" value="<?php echo $products[0]['ref'];?>">
     	produit : <?php echo $products[0]['ref'];?>
     	<input name="submit" value="add to card" type="submit"/>
-    </form>>
+    </form>
 </body>
 </html>

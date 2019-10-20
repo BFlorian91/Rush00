@@ -31,7 +31,7 @@
     </div>
     <div>
         Total : code php
-        <form action="action_basket.php" method="POST">
+        <form action="../model/action_basket.php" method="POST">
              <input type="submit" name="purchase" value="purchase">
         </form>
     </div>

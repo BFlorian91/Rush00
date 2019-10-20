@@ -1,13 +1,13 @@
 <?php
-	session_start();
+	include 'add_item.php';
 
-	function add_item($item)
-	{
-		echo $_SESSION['loggued_on_user']."\n";
-	}
+	session_start();
+	if (!file_exists("../private"))
+		mkdir("../private", '0755');
 
 
 	if ($_POST['submit'] == "add to card")
 		add_item($_POST['ref']);
+	echo "test\n";
 	header("location: ../index.php");
 ?>
