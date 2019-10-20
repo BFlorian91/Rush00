@@ -3,12 +3,6 @@
 
     include "action_auth.php";
 
-    if (!$_POST["login"] || !$_POST["passwd"])
-    {
-        user_information_missing();
-        exit;
-    }
-
     if ($_POST["login"] && $_POST["passwd"] && auth($_POST["login"], $_POST["passwd"])) 
     {
         $_SESSION["loggued_on_user"] = $_POST["login"];
@@ -17,5 +11,5 @@
     else 
     {
         $_SESSION["loggued_on_user"] = "";
-        user_not_found();
+        echo "ERROR" . PHP_EOL;
     }
