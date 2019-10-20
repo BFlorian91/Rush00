@@ -1,8 +1,9 @@
 <?php
 
+    require_once "../view/error.php";
+
     if ($_POST['login'] && $_POST['passwd'] && $_POST['submit']) 
     {
-        
         $user['login'] = $_POST['login'];
         $user['passwd'] = hash('Whirlpool', $_POST['passwd']);
         $user['ban'] = 0;
@@ -21,17 +22,13 @@
                     $exist = true;
         }
         if ($exist || $_POST['login'] === "unsubscribe") 
-        {
-            echo "Nom d'utilisateur indisponible";
-            exit;
-        }
+            user_already_taken();
         else 
         {
             $accounts[] = $user;
             file_put_contents('../private/passwd', serialize($accounts));
-            header("location: /index.php");
+            user_not_found();
         }
     } 
     else
-        header("Location: /view/create.php");
-        
+       user_information_missing(); 
