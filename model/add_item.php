@@ -1,6 +1,5 @@
 <?php
 	include 'basket_utils.php';
-	// include 'stock_manager.php';
 
 	function is_already_in_basket($ref, $basket)
 	{

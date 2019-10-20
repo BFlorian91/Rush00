@@ -3,13 +3,37 @@
 ?>
     <header>
         <h1>Black Market</h1>
+        <nav>
+            <ul class="nav">
+                <li>
+                    <a class="menu_link active" href="../index.php">Accueil</a>
+                </li>
+                <li>
+                    <?php if (!$_SESSION['loggued_on_user']): ?>
+                        <a class="menu_link" href="/view/login.php">Se Connecter</a>
+                </li>
+                <li>
+                        <a class="menu_link" href="/view/create.php">S'inscrire</a>
+                    <?php endif; ?>
+                </li>
+                <li>
+                    <?php if ($_SESSION['loggued_on_user'] === 'admin'): ?>
+                        <a class="menu_link" href="/view/admin.php">Admin</a> 
+                    <?php endif; ?>
+                </li>
+                <li>
+                <?php if ($_SESSION['loggued_on_user']): ?>
+                    <a class="menu_link" href="/view/modif.php">Gérer son compte</a>
+                </li>
+                <li>
+                    <a class="menu_link" href="/model/action_logout.php">Déconnexion</a>
+                <?php endif; ?>
+                </li>
+                <li>
+                    <a class="menu_link" href="/view/basket.php">Panier</a>
+                </li>
+                </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="../index.php" class='active'>Accueil</a>
-        <a href="/view/login.php">Se Connecter</a>
-        <a href="/view/create.php">S'inscrire</a>
-        <a href="/view/admin.php">Admin</a>
-        <a href="/view/modif.php">Gérer son compte</a>
-        <a href="/view/basket.php">panier</a>
-        <a href="/model/logout.php">Déconnexion</a>
-    </nav>
+
+>>>>>>> master
