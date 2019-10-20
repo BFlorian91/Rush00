@@ -27,12 +27,13 @@
                     <a class="menu_link" href="/view/modif.php">Gérer son compte</a>
                 </li>
                 <li>
-                    <a class="menu_link" href="/view/basket.php">Panier</a>
-                </li>
-                <li>
                     <a class="menu_link" href="/model/action_logout.php">Déconnexion</a>
                 <?php endif; ?>
+                </li>
+                <li>
+                    <a class="menu_link" href="/view/basket.php">Panier</a>
                 </li>
                 </ul>
         </nav>
     </header>
+
