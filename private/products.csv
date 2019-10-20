@@ -1,1 +1,1 @@
-a:2:{i:1;a:5:{s:3:"ref";s:4:"Anne";s:8:"category";s:5:"Fille";s:5:"price";i:2;s:5:"stock";i:2;s:3:"img";s:5:"aquan";}i:2;a:5:{s:3:"ref";s:5:"Tigre";s:8:"category";s:7:"Garçon";s:5:"price";i:3;s:5:"stock";i:71;s:3:"img";s:5:"tigre";}}
+a:1:{i:6;a:5:{s:3:"ref";s:5:"Tigre";s:8:"category";s:7:"Garçon";s:5:"price";s:1:"5";s:5:"stock";s:3:"342";s:3:"img";s:5:"tigre";}}

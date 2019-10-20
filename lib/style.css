@@ -39,6 +39,12 @@ h3 {
     width: 20%;
 }
 
+.value_table {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100p;
+}
+
 @media screen and (max-width: 1200px) {
     .button_container {
         flex-direction: column;
