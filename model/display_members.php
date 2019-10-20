@@ -18,7 +18,7 @@
                     <td>
                         <form action="../model/ban_users.php" method="POST">
                             <input type="hidden" name="login" value="<?php echo $val['login']?>">
-                            <input style="float: right; width:100px; margin-right: 10px;" name="submit" type="submit" class="button_in_form" value="ban">
+                            <input style="float: right; width:100px; margin-right: 10px; background: #5f6769" name="submit" type="submit" class="button_in_form" value="ban">
                         </form>
                     </td>
                     <?php endif; ?>

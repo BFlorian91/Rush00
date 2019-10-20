@@ -11,6 +11,8 @@
                     <td>Price</td>
                     <td>Stock</td>
                     <td>Image</td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </thead>
             <tbody>

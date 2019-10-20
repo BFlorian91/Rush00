@@ -28,6 +28,7 @@
                 <th>Produit</th>
                 <th>Prix</th>
                 <th>Quantité</th>
+                <th></th>
             </thead>
             <tbody>
                 <?php foreach ($basket as $key => $value) {?>
