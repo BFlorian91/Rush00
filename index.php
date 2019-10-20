@@ -16,5 +16,10 @@
     	produit : <?php echo $products[0]['ref'];?>
     	<input name="submit" value="add to card" type="submit"/>
     </form>
+        <form method="POST" action="model/action_basket.php">
+        <input type="hidden" name="ref" value="<?php echo $products[1]['ref'];?>">
+        produit : <?php echo $products[1]['ref'];?>
+        <input name="submit" value="add to card" type="submit"/>
+    </form>
 </body>
 </html>
