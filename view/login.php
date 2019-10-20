@@ -1,16 +1,18 @@
 <?php 
-    require_once 'menu.php'
+    require_once 'menu.php';
 ?>
-<body>
-   <form action="/model/action_login.php" method="POST">
-        <input type="text" name="login" placeholder="login">
-        <br />
-        <input type="password" name="passwd" placeholder="password">
-        <br />
-        <button type="submit" name="submit" value="OK">login</button>
-   </form> 
-   <br />
-   <a href="create.php">create account</a>
-   <a href="modif.php">edit account</a>
-</body>
+    <div class="container">
+        <div class="forms">
+            <form action="/model/action_login.php" method="POST">
+                <input type="text" name="login" placeholder="login">
+                <input type="password" name="passwd" placeholder="password">
+                <input type="submit" name="submit" value="Login">
+            </form> 
+            <div class="button_container" >
+                <a class="button_in_form" href="create.php">create account</a>
+                <a class="button_in_form" href="modif.php">edit account</a>
+            </div>
+        </div>
+    </div>
+</body> 
 </html>

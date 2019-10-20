@@ -1,10 +1,10 @@
 <?php 
     require_once 'menu.php';
 ?>
-<body>
-    <h1>Admin Panel</h1>
-    <ul>
-        <a href="/view/articles.php"><li>Articles</li></a>
-        <a href="/view/users.php"><li>Utilisateurs</li></a>
-    </ul>
+    <h3>Admin Panel</h3>
+        <div class="button_admin">
+            <a class="button" href="/view/articles.php">Articles</a>
+            <a class="button" href="/view/users.php">Utilisateurs</a>
+        </div>
 </body>
+</html>

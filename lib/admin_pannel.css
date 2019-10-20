@@ -1,0 +1,28 @@
+li {
+    list-style: none;
+}
+
+.container_pannel {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button_admin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button_admin a {
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #f66767;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

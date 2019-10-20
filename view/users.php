@@ -1,7 +1,6 @@
 <?php 
     require_once 'menu.php'
 ?>
-<body>
     <form action="/model/action_remove_user.php" method="POST">
         <label>Remove user:</label>
         <input type="text" name="login" placeholder="Login">

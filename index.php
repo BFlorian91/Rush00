@@ -1,10 +1,7 @@
 <?php
     session_start();
+    require_once 'view/head.php';
 ?>
-<head>
-    <meta charset="UTF-8">
-    <title>Black Market</title>
-</head>
 <body>
     <?php require_once 'view/menu.php'; 
     echo $_SESSION['loggued_on_user'];
