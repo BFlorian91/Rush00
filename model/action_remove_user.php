@@ -12,7 +12,7 @@
                 {
                     unset($accounts[$key]);
                     file_put_contents('../private/passwd', serialize($accounts));
-                    header('Location: /view/admin.php');
+                    header('Location: /view/users.php');
                     exit;
                 }    
             }

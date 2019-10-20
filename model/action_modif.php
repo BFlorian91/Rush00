@@ -2,7 +2,7 @@
     session_start();
     if ($_POST['oldpw'] && $_POST['newpw']) 
     {
-        if (!$_POST['newpw'] || $_POST['submit'] !== "OK") 
+        if (!$_POST['newpw']) 
         {
             echo("ERROR" . PHP_EOL);
             return;
