@@ -4,7 +4,9 @@ li {
 
 .container_pannel {
     margin-top: 40px;
+    min-width: 200px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -26,3 +28,4 @@ li {
     border-radius: 4px;
     cursor: pointer;
 }
+

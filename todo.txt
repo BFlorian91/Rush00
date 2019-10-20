@@ -1,3 +1,0 @@
-Améliorer le system de catégorie, genre pannel déroulant;
-Faire le remove catégorie;
-commencer à penser CSS x);
